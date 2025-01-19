@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #ffffff;
+    background-image: url("/images/photo/Фон.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: #1d6d3f;
+    position: fixed;
+    width: 100%;
+    /* margin: auto; */
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 20px 0px;
+    
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.coin-name{
+    font-size: 47px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 0px;
+    position: relative;
+    top: -1px;
+    left: 13px;
+
+}
+
+.crypto-brand {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 115px;
+}
+
+.buttons{
+    position: relative;
+    right: 105px;
+}
+
+.buttons a{
+    color: white;
+    text-decoration: none;
+    /* font-size: 1rem; */
+    padding: 10px 30px;
+    background-color: #0f7135;
+    border: 3px solid black;
+    border-color: black;
+    border-radius: 10%;
+    margin: 0 20px;
+
+    cursor: pointer;
+}
+
+.buttons a:hover{
+    color: blue;
+    font-size: 17px;
+}
+
+.footer-socials-media-icons a{
+    text-decoration: none;
+}
+
+.language {
+    /* color: white; */
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 100%;
+    margin-right: -47px;
+    padding: 10px;
+}
+
+.main {
+    max-width: 800px;
+    margin: 90px auto;
+    padding: 20px;
+    min-height: 100vh;
+
+}
+
+.section {
+    position: relative;
+    background-color: white;
+    /* border: 2px solid #000000; */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.section p{
+    font-size: 18px;
+}
+
+.section-image {
+    display: flex;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    /* background-color: #d32299; */
+    height: 80px;
+    width: 220px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-image img {
+    /* width: 120px; */
+    /* border: 2px solid #000000; */
+    margin-right: 8px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.section .philosophy{
+    padding: 20px 0px;
+    
+}
+.section .why-we{
+    padding: 20px 0px;
+    
+}
+.section .mission{
+    padding: 20px 0px;
+    
+}
+.section .future{
+    padding: 20px 0px;
+    
+}
+.section .join-us{
+    padding: 20px 0px;
+    
+}
+
+.section-icons a{
+    text-decoration: none;
+}
+
+/* #philosophy {
+    background-image: url("downloadedImage (1).png");
+} */
+
+.buy-button {
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #2e8b57;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    
+    border: 3px solid #c6c829;
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+
+.buy-button:hover {
+    background-color: #2e9c5e;
+    border: 3px solid #e3e71e;
+    font-size: 19px;
+}
+
+.blur-area {
+    /* -webkit-mask-box-image: -webkit-linear-gradient(black 25%, transparent 35%, transparent 65%, black 75%); */
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    padding-top: 1px;
+    top: 0;
+    
+    
+}
+
+.blur-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(7px);
+    
+  background: linear-gradient(to bottom, rgb(0 0 0 / 40%), rgb(0 0 0 / 40%));
+
+    -webkit-mask: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 90%,  /* Непрозрачный внизу */
+        rgba(0, 0, 0, 0) 100%   /* Прозрачный за пределами элемента */
+    );
+    mask: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 90%,  /* Непрозрачный внизу */
+        rgba(0, 0, 0, 0) 100%   /* Прозрачный за пределами элемента */
+    );
+
+    z-index: -1;
+}
+
+.footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-top: 100px; */
+}
+
+.side-frame {
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    width: 200px;
+    height: 855px;
+    border-radius: 5px;
+    margin: 0px;
+    background-color: #287a4b;
+}
+
+.side-frame.left {
+    left: 0;
+}
+
+.side-frame.right {
+    right: 0;
+}
+/* 
+.background{
+    background-image: url("downloadedImage (1).png");
+    background-attachment: fixed;
+} */
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    
+}
+
+.flag-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.font {
+    font-size: 23px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.dropdown-arrow {
+    /* width: 12px; */
+    /* height: 12px; */
+    margin-left: auto;
+    position: relative;
+    left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu .dropdown-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.contact-us{
+    margin-left: -70px;
+    color:#cddcd3;
+}
+
+.all-rights{
+    margin-left: -100px;
+    color:#cddcd3;
+}
+
