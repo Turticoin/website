@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Comic Sans MS', 'Arial', sans-serif;
     background-color: #ffffff;
-    background-image: url("/images/photo/Фон.svg");
+    background-image: url("images/photo/Фон.svg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
